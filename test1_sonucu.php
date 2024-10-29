@@ -46,6 +46,16 @@ foreach ($correct_answers as $question => $answer) {
 // Sonuçları göster
 echo "<p>Toplam Doğru Cevap Sayısı: $score / $total_questions</p>";
 
+// Yüzdelik sonuç
+$percentage = ($score / $total_questions) * 100;
+echo "<p>Başarı Yüzdesi: $percentage%</p>";
+
+if ($percentage >= 70) {
+    echo "<p>Tebrikler, testi başarıyla geçtiniz!</p>";
+} else {
+    echo "<p>Maalesef, testi geçemediniz. Tekrar deneyin!</p>";
+}
+?>
 
 </body>
 </html>
