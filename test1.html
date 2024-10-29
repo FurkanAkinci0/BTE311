@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programcılığı Testi</title>
+</head>
+<body>
+    <h2>Web Programcılığı Testi</h2>
+    <form action="sonuc.php" method="post">
+        <!-- Soru 1 -->
+        <label>1. HTML'nin açılımı nedir?</label><br>
+        <input type="radio" name="soru1" value="HyperText Markup Language" required> HyperText Markup Language<br>
+        <input type="radio" name="soru1" value="HighText Machine Language"> HighText Machine Language<br>
+        <input type="radio" name="soru1" value="HyperText Markup Link"> HyperText Markup Link<br><br>
+
+        <!-- Soru 2 -->
+        <label>2. Hangi etiket HTML belgesinde başlık belirtmek için kullanılır?</label><br>
+        <select name="soru2" required>
+            <option value="">Seçin</option>
+            <option value="h1">h1</option>
+            <option value="header">header</option>
+            <option value="title">title</option>
+            <option value="head">head</option>
+        </select><br><br>
+
+        <!-- Soru 3 -->
+        <label>3. Aşağıdaki hangi CSS özelliği bir elemanın arka plan rengini değiştirir?</label><br>
+        <input type="checkbox" name="soru3[]" value="background-color"> background-color<br>
+        <input type="checkbox" name="soru3[]" value="color"> color<br>
+        <input type="checkbox" name="soru3[]" value="text-color"> text-color<br><br>
+
+        <!-- Soru 4 -->
+        <label>4. Hangisi bir JavaScript veri tipidir?</label><br>
+        <input type="radio" name="soru4" value="String" required> String<br>
+        <input type="radio" name="soru4" value="Text"> Text<br>
+        <input type="radio" name="soru4" value="Paragraph"> Paragraph<br><br>
+
+        <!-- Soru 5 -->
+        <label>5. Aşağıdakilerden hangisi bir programlama dilidir? (Birden fazla seçenek seçebilirsiniz)</label><br>
+        <input type="checkbox" name="soru5[]" value="HTML"> HTML<br>
+        <input type="checkbox" name="soru5[]" value="CSS"> CSS<br>
+        <input type="checkbox" name="soru5[]" value="Python"> Python<br>
+        <input type="checkbox" name="soru5[]" value="SQL"> SQL<br>
+        <input type="checkbox" name="soru5[]" value="HTTP"> HTTP<br><br>
+
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Sıfırla">
+    </form>
+</body>
+</html>
