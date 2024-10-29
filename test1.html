@@ -7,8 +7,8 @@
 
 <h2>Web Programcılığı Testi</h2>
 
-<form action="test1_sonucu.html" method="post">
-
+<form action="result.php" method="post">
+  
   <!-- Soru 1: Radio Button -->
   <p>1. HTML’in açılımı nedir?</p>
   <input type="radio" id="html1" name="html" value="HyperText Markup Language" required>
@@ -29,13 +29,13 @@
 
   <!-- Soru 3: Checkbox -->
   <p>3. Aşağıdakilerden hangileri HTML etiketidir? (Birden fazla seçilebilir)</p>
-  <input type="checkbox" id="tag1" name="html_tags" value="p">
+  <input type="checkbox" id="tag1" name="html_tags[]" value="p">
   <label for="tag1">&lt;p&gt;</label><br>
-  <input type="checkbox" id="tag2" name="html_tags" value="img">
+  <input type="checkbox" id="tag2" name="html_tags[]" value="img">
   <label for="tag2">&lt;img&gt;</label><br>
-  <input type="checkbox" id="tag3" name="html_tags" value="link">
+  <input type="checkbox" id="tag3" name="html_tags[]" value="link">
   <label for="tag3">&lt;link&gt;</label><br>
-  <input type="checkbox" id="tag4" name="html_tags" value="js">
+  <input type="checkbox" id="tag4" name="html_tags[]" value="js">
   <label for="tag4">&lt;js&gt;</label><br><br>
 
   <!-- Soru 4: Dropdown (Select) -->
@@ -67,13 +67,13 @@
 
   <!-- Soru 7: Checkbox -->
   <p>7. Web programlamada kullanılan dillerden hangileridir? (Birden fazla seçilebilir)</p>
-  <input type="checkbox" id="language1" name="programming_languages" value="HTML">
+  <input type="checkbox" id="language1" name="programming_languages[]" value="HTML">
   <label for="language1">HTML</label><br>
-  <input type="checkbox" id="language2" name="programming_languages" value="CSS">
+  <input type="checkbox" id="language2" name="programming_languages[]" value="CSS">
   <label for="language2">CSS</label><br>
-  <input type="checkbox" id="language3" name="programming_languages" value="Python">
+  <input type="checkbox" id="language3" name="programming_languages[]" value="Python">
   <label for="language3">Python</label><br>
-  <input type="checkbox" id="language4" name="programming_languages" value="SQL">
+  <input type="checkbox" id="language4" name="programming_languages[]" value="SQL">
   <label for="language4">SQL</label><br><br>
 
   <!-- Soru 8: Radio Button -->
@@ -109,4 +109,5 @@
 
 </body>
 </html>
+
 
