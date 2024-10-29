@@ -11,13 +11,8 @@
 // Doğru cevaplar (anahtar ve doğru cevaplar burada saklanır)
 $correct_answers = [
     "html" => "HyperText Markup Language",
-    "title" => "title",
     "html_tags" => ["p", "img", "link"], // Çoklu cevap olan bir checkbox
-    "style_language" => "css",
-    "link_tag" => "a",
-    "table" => "table",
     "programming_languages" => ["HTML", "CSS", "Python", "SQL"],
-    "img_tag" => "img",
     "form_tag" => "form",
     "css" => "Cascading Style Sheets"
 ];
@@ -45,17 +40,6 @@ foreach ($correct_answers as $question => $answer) {
 
 // Sonuçları göster
 echo "<p>Toplam Doğru Cevap Sayısı: $score / $total_questions</p>";
-
-// Yüzdelik sonuç
-$percentage = ($score / $total_questions) * 100;
-echo "<p>Başarı Yüzdesi: $percentage%</p>";
-
-if ($percentage >= 70) {
-    echo "<p>Tebrikler, testi başarıyla geçtiniz!</p>";
-} else {
-    echo "<p>Maalesef, testi geçemediniz. Tekrar deneyin!</p>";
-}
-?>
 
 </body>
 </html>
