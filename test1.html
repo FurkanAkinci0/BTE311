@@ -7,7 +7,7 @@
 
 <h2>Web Programcılığı Testi</h2>
 
-<form action="test1_sonucu.php" method="post">
+<form action="test1_sonucu.php" method="post" onsubmit="return validateForm()">
   
   <!-- Soru 1: Radio Button -->
   <p>1. HTML’in açılımı nedir?</p>
@@ -19,7 +19,7 @@
   <label for="html3">HyperText Making Language</label><br><br>
 
   <!-- Soru 2: Checkbox -->
-  <p>3. Aşağıdakilerden hangileri HTML etiketidir? (Birden fazla seçilebilir)</p>
+  <p>2. Aşağıdakilerden hangileri HTML etiketidir? (Birden fazla seçilebilir)</p>
   <input type="checkbox" id="tag1" name="html_tags[]" value="p">
   <label for="tag1">&lt;p&gt;</label><br>
   <input type="checkbox" id="tag2" name="html_tags[]" value="img">
@@ -30,7 +30,7 @@
   <label for="tag4">&lt;js&gt;</label><br><br>
 
   <!-- Soru 3: Checkbox -->
-  <p>7. Web programlamada kullanılan dillerden hangileridir? (Birden fazla seçilebilir)</p>
+  <p>3. Web programlamada kullanılan dillerden hangileridir? (Birden fazla seçilebilir)</p>
   <input type="checkbox" id="language1" name="programming_languages[]" value="HTML">
   <label for="language1">HTML</label><br>
   <input type="checkbox" id="language2" name="programming_languages[]" value="CSS">
@@ -41,7 +41,7 @@
   <label for="language4">SQL</label><br><br>
 
   <!-- Soru 4: Dropdown (Select) -->
-  <p>9. Hangi etiket bir HTML formu oluşturur?</p>
+  <p>4. Hangi etiket bir HTML formu oluşturur?</p>
   <select name="form_tag" required>
     <option value="form">&lt;form&gt;</option>
     <option value="input">&lt;input&gt;</option>
@@ -50,7 +50,7 @@
   </select><br><br>
 
   <!-- Soru 5: Radio Button -->
-  <p>10. CSS’nin açılımı nedir?</p>
+  <p>5. CSS’nin açılımı nedir?</p>
   <input type="radio" id="css1" name="css" value="Cascading Style Sheets" required>
   <label for="css1">Cascading Style Sheets</label><br>
   <input type="radio" id="css2" name="css" value="Colorful Style Sheets">
