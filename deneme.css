@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="mystyle.css">
-</head>
-<body>
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-</body>
-</html>
+https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child
+
+p {
+  font-weight: bold;
+}
+
+li:nth-child(-n + 3) {
+  border: 2px solid orange;
+  margin-bottom: 1px;
+}
+
+li:nth-child(even) {
+  background-color: lightyellow;
+}
+
