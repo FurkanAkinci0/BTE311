@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Düzeni - Birleşmiş Satırlar</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 100px);
+            gap: 10px;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .grid-item {
+            background-color: teal;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .grid-item-merged {
+            grid-column: span 3;
+            grid-row: 1;
+            background-color: navy;
+        }
+
+        .grid-item-merged-row4 {
+            grid-column: 1;
+            grid-row: 2 / span 2;
+            background-color: darkorange;
+        }
+
+        .grid-item-merged-row5 {
+            grid-column: 2;
+            grid-row: 2 / span 2;
+            background-color: mediumseagreen;
+        }
+
+        .grid-item-merged-row6 {
+            grid-column: 3;
+            grid-row: 2 / span 2;
+            background-color: yellow;
+        }
+
+        .grid-item-merged-row10 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+            background-color: purple;
+        }
+
+        .grid-item-merged-row13 {
+            grid-column: 1 / span 3;
+            grid-row: 5;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-merged">A</div> <!-- Birleşik öğe -->
+        <div class="grid-item-merged-row4">B</div> <!-- 4 ve 7. satırı birleştiren öğe -->
+        <div class="grid-item-merged-row5">C</div> <!-- 5 ve 8. satırı birleştiren öğe -->
+        <div class="grid-item-merged-row6">D</div> <!-- 6 ve 9. satırı birleştiren öğe -->
+        <div class="grid-item-merged-row10">E</div> <!-- 10 ve 11. satırı birleştiren öğe -->
+        <div class="grid-item">F</div>
+        <div class="grid-item-merged-row13">G</div> <!-- 13, 14 ve 15. satırı birleştiren öğe -->
+    </div>
+</body>
+</html>
