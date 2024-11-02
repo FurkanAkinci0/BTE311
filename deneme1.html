@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kesişen Daireler</title>
     <style>
+        /* Sayfa merkezi konum ayarları */
+        body {
+            display: flex;
+            justify-content: center; /* Yatayda ortalama */
+            align-items: center;     /* Dikeyde ortalama */
+            height: 100vh;          /* Tam yüksekliği kapla */
+            margin: 0;               /* Varsayılan marjları kaldır */
+            background-color: #f0f0f0; /* Arka plan rengi */
+        }
+
         /* Ortak daire stil ayarları */
         .circle {
-            width: 100px;               /* Genişlik */
-            height: 100px;              /* Yükseklik */
-            border-radius: 50%;         /* Daire şekli */
-            position: absolute;         /* Üst üste yerleştirmek için mutlak konum */
-            opacity: 0.6;               /* Biraz saydamlık */
+            width: 150px;            /* Genişlik (büyütüldü) */
+            height: 150px;           /* Yükseklik (büyütüldü) */
+            border-radius: 50%;      /* Daire şekli */
+            position: absolute;       /* Üst üste yerleştirmek için mutlak konum */
+            opacity: 0.6;            /* Biraz saydamlık */
         }
         /* Daire renk ve konum ayarları */
         .circle1 {
-            background-color: orange;     /* Turuncu  */
-            top: 50px;
-            left: 50px;
+            background-color: orange; /* Turuncu */
+            top: 100px;               /* Dikey konum */
+            left: 50px;               /* Yatay konum */
         }
         .circle2 {
-            background-color: blue;   /* Sarı */
-            top: 50px;
-            left: 100px;
+            background-color: blue;   /* Mavi */
+            top: 100px;               /* Dikey konum */
+            left: 150px;              /* Yatay konum */
         }
         .circle3 {
-            background-color: yellow;   /* Lacivert */
-            top: 100px;
-            left: 75px;
+            background-color: yellow; /* Sarı */
+            top: 150px;               /* Dikey konum */
+            left: 100px;              /* Yatay konum */
         }
     </style>
 </head>
