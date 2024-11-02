@@ -14,10 +14,20 @@ th, td {
 /* Başlık hücreleri için stil */
 th {
     background-color: #4CAF50;
-    color: gray;
+    color: white;
 }
 
 /* Alternatif satır renkleri */
 tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+/* Belirli hücreler için özel arka plan renkleri */
+tr:nth-child(2) td:nth-child(1), /* Veri 1 */
+tr:nth-child(2) td:nth-child(2), /* Veri 2 */
+tr:nth-child(2) td:nth-child(3), /* Veri 3 */
+tr:nth-child(2) td:nth-child(4), /* Veri 4 */
+tr:nth-child(3) td:nth-child(7)  /* Veri 14 */ {
+    background-color: #0000FF; /* Mavi arka plan */
+    color: white; /* Yazı rengi beyaz */
 }
