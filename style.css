@@ -1,0 +1,23 @@
+/* Tablo genel stil */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Başlık hücreleri için stil */
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Alternatif satır renkleri */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
