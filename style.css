@@ -39,3 +39,9 @@ tr:nth-child(even) {
     background-color: #fd9bfa !important; /* Pembe arka plan */
     color: white !important; /* Yazı rengi beyaz */
 }
+
+/* Turkuaz arka plana sahip hücreler */
+.turkuaz {
+    background-color: #89fbed !important; /* Turkuaz arka plan */
+    color: white !important; /* Yazı rengi beyaz */
+}
