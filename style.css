@@ -11,10 +11,10 @@ th, td {
     border: 1px solid #ccc;
 }
 
-/* Başlık hücreleri için güncellenmiş stil */
+/* Başlık hücreleri için kesin gri arka plan ve siyah yazı rengi */
 th {
-    background-color: #d3d3d3; /* Gri arka plan */
-    color: black; /* Siyah yazı rengi */
+    background-color: #d3d3d3 !important; /* Gri arka plan */
+    color: black !important; /* Siyah yazı rengi */
 }
 
 /* Alternatif satır renkleri */
@@ -24,7 +24,8 @@ tr:nth-child(even) {
 
 /* Mavi arka plana sahip hücreler */
 .mavi {
-    background-color: #0000FF; /* Mavi arka plan */
-    color: white; /* Yazı rengi beyaz */
+    background-color: #0000FF !important; /* Mavi arka plan */
+    color: white !important; /* Yazı rengi beyaz */
 }
+
 
