@@ -3,7 +3,7 @@ table {
     width: 100%;
     border-collapse: separate; /* Hücre boşlukları için 'separate' modunu kullan */
     border-spacing: 0 8px; /* Satırların arasında 5px boşluk bırak */
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 th, td {
