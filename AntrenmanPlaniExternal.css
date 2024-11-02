@@ -1,8 +1,8 @@
 /* Tablo genel stil */
 table {
     width: 100%;
-    border-collapse: separate; /* Hücre boşlukları için 'separate' modunu kullan */
-    border-spacing: 0 5px; /* Satırların arasında 5px boşluk bırak */
+    border-collapse: separate;
+    border-spacing: 0 5px;
     margin-top: 15px;
 }
 
@@ -12,55 +12,47 @@ th, td {
     border: 1px solid #ccc;
 }
 
-/* Başlık hücreleri için kesin gri arka plan ve siyah yazı rengi */
 th {
-    background-color: #d3d3d3 !important; /* Gri arka plan */
-    color: black !important; /* Siyah yazı rengi */
+    background-color: #d3d3d3 !important;
+    color: black !important;
 }
 
-/* Alternatif satır renkleri */
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Mavi arka plana sahip hücreler */
+
 .mavi {
-    background-color: #5d66ea !important; /* Mavi arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #5d66ea !important; 
+    color: white !important;
 }
 
-/* Yeşil arka plana sahip hücreler */
 .yesil {
-    background-color: #3bff38 !important; /* Yeşil arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #3bff38 !important; 
+    color: white !important; 
 }
 
-/* Pembe arka plana sahip hücreler */
 .pembe {
-    background-color: #fd9bfa !important; /* Pembe arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #fd9bfa !important; 
+    color: white !important; 
 }
 
-/* Turkuaz arka plana sahip hücreler */
 .turkuaz {
-    background-color: #89fbed !important; /* Turkuaz arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #89fbed !important;
+    color: white !important; 
 }
 
-/* Kırmızı arka plana sahip hücreler */
 .kirmizi {
-    background-color: #fb3c4f !important; /* Kırmızı arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #fb3c4f !important; 
+    color: white !important; 
 }
 
-/* Turuncu arka plana sahip hücreler */
 .turuncu {
-    background-color: #ff8f33 !important; /* Turuncu arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #ff8f33 !important; 
+    color: white !important; 
 }
 
-/* Koyu Yeşil arka plana sahip hücreler */
 .kyesil {
-    background-color: #00570e !important; /* Koyu Yeşil arka plan */
-    color: white !important; /* Yazı rengi beyaz */
+    background-color: #00570e !important;
+    color: white !important;
 }
