@@ -1,0 +1,31 @@
+/* Genel tablo stili */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Genişliği %100 olarak ayarlayabilirsiniz */
+}
+
+/* Tablodaki hücrelerin stili */
+th, td {
+    border: 1px solid black; /* Hücrelerin kenar çizgisi */
+    text-align: center; /* Ortalamayı sağlar */
+    vertical-align: middle; /* Dikey ortalamayı sağlar */
+    padding: 8px; /* Hücre içi boşluk */
+}
+
+/* Başlık hücreleri için stil */
+th {
+    background-color: black; /* Arka plan rengi siyah */
+    color: white; /* Yazı rengi beyaz */
+}
+
+/* Mavi arka plana sahip hücreler için stil */
+.blue-header {
+    background-color: blue; /* Arka plan rengi mavi */
+    color: white; /* Yazı rengi beyaz */
+}
+
+/* Sarı arka plana sahip hücreler için stil */
+.yellow-highlight {
+    background-color: yellow; /* Arka plan rengi sarı */
+    color: black; /* Yazı rengi siyah */
+}
