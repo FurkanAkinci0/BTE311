@@ -1,7 +1,8 @@
 /* Tablo genel stil */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate; /* Hücre boşlukları için 'separate' modunu kullan */
+    border-spacing: 0 5px; /* Satırların arasında 5px boşluk bırak */
     margin-top: 20px;
 }
 
