@@ -13,8 +13,8 @@ th, td {
 
 /* Başlık hücreleri için stil */
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #000;
+    color: gray;
 }
 
 /* Alternatif satır renkleri */
