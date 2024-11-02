@@ -11,10 +11,10 @@ th, td {
     border: 1px solid #ccc;
 }
 
-/* Başlık hücreleri için stil */
+/* Başlık hücreleri için güncellenmiş stil */
 th {
-    background-color: #000;
-    color: gray;
+    background-color: #d3d3d3; /* Gri arka plan */
+    color: black; /* Siyah yazı rengi */
 }
 
 /* Alternatif satır renkleri */
@@ -22,12 +22,9 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Belirli hücreler için özel arka plan renkleri */
-tr:nth-child(2) td:nth-child(1), /* Veri 1 */
-tr:nth-child(2) td:nth-child(2), /* Veri 2 */
-tr:nth-child(2) td:nth-child(3), /* Veri 3 */
-tr:nth-child(2) td:nth-child(4), /* Veri 4 */
-tr:nth-child(3) td:nth-child(7)  /* Veri 14 */ {
+/* Mavi arka plana sahip hücreler */
+.mavi {
     background-color: #0000FF; /* Mavi arka plan */
     color: white; /* Yazı rengi beyaz */
 }
+
