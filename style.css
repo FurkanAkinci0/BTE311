@@ -30,6 +30,12 @@ tr:nth-child(even) {
 
 /* Yeşil arka plana sahip hücreler */
 .yesil {
-    background-color: #3bff38 !important; /* Mavi arka plan */
+    background-color: #3bff38 !important; /* Yeşil arka plan */
+    color: white !important; /* Yazı rengi beyaz */
+}
+
+/* Pembe arka plana sahip hücreler */
+.pembe {
+    background-color: #fd9bfa !important; /* Pembe arka plan */
     color: white !important; /* Yazı rengi beyaz */
 }
