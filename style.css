@@ -24,7 +24,7 @@ tr:nth-child(even) {
 
 /* Mavi arka plana sahip hücreler */
 .mavi {
-    background-color: #0000FF !important; /* Mavi arka plan */
+    background-color: #5d66ea !important; /* Mavi arka plan */
     color: white !important; /* Yazı rengi beyaz */
 }
 
