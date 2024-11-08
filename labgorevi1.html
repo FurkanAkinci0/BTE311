@@ -2,8 +2,8 @@
 <head>
 	<style>
 		@keyframes yukariAsagi {
-			0%, 100% { top: 0; }
-			50% { top: 50px; }
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(50px); }
 		}
 
 		@keyframes buyukKuculRenkDegisim {
@@ -17,8 +17,8 @@
 		}
 
 		@keyframes sagaSola {
-			0%, 100% { left: 0; }
-			50% { left: 50px; }
+			0%, 100% { transform: translateX(0); }
+			50% { transform: translateX(50px); }
 		}
 
 		@keyframes donen {
@@ -30,6 +30,7 @@
 			display: flex;
 			gap: 20px;
 			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 		.box {
@@ -61,8 +62,8 @@
 <body>
 	<div class="container">
 		<div class="box yukariAsagi"><img src="gulensurat.png" alt="Gülen Surat"></div>
-		<div class="box buyukKuculRenkDegisim"><img src="kızgınsurat.png" alt="Kızgın Surat"></div>
-		<div class="box transparanDegisim"><img src="uzgunsurat.png" alt="Uzgun Surat"></div>
+		<div class="box buyukKuculRenkDegisim"><img src="kizginsurat.png" alt="Kızgın Surat"></div>
+		<div class="box transparanDegisim"><img src="uzgunsurat.png" alt="Üzgün Surat"></div>
 		<div class="box sagaSola"><img src="duzsurat.png" alt="Düz Surat"></div>
 		<div class="box donen"><img src="tekgozluk.png" alt="Tek Gözlük"></div>
 	</div>
