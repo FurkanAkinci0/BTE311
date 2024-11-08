@@ -1,0 +1,70 @@
+<html>
+<head>
+	<style>
+		@keyframes yukariAsagi {
+			0%, 100% { top: 0; }
+			50% { top: 50px; }
+		}
+
+		@keyframes buyukKuculRenkDegisim {
+			0%, 100% { transform: scale(1); background-color: red; }
+			50% { transform: scale(1.5); background-color: yellow; }
+		}
+
+		@keyframes transparanDegisim {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.2; }
+		}
+
+		@keyframes sagaSola {
+			0%, 100% { left: 0; }
+			50% { left: 50px; }
+		}
+
+		@keyframes donen {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		.container {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			margin: 10px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden; /* Yüz resimlerinin dışarı taşmasını önlemek için */
+		}
+
+		.box img {
+			width: 100%; /* Yüz img'nin kutuyu tam kaplaması için */
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+		.yukariAsagi { animation: yukariAsagi 2s infinite; }
+		.buyukKuculRenkDegisim { animation: buyukKuculRenkDegisim 2s infinite; }
+		.transparanDegisim { animation: transparanDegisim 2s infinite; }
+		.sagaSola { animation: sagaSola 2s infinite; }
+		.donen { animation: donen 2s infinite linear; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box yukariAsagi"><img src="gulensurat.png" alt="Gülen Surat"></div>
+		<div class="box buyukKuculRenkDegisim"><img src="kızgınsurat.png" alt="Kızgın Surat"></div>
+		<div class="box transparanDegisim"><img src="uzgunsurat.png" alt="Uzgun Surat"></div>
+		<div class="box sagaSola"><img src="duzsurat.png" alt="Düz Surat"></div>
+		<div class="box donen"><img src="tekgozluk.png" alt="Tek Gözlük"></div>
+	</div>
+</body>
+</html>
