@@ -36,27 +36,31 @@
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             gap: 20px;
-            align-items: flex-start;
+            align-items: stretch;
         }
 
         /* Resim Bloğu */
         .image-block {
             flex-shrink: 0;
+            width: 40%; /* Yazı ile orantılı genişlik */
         }
 
         .image-block img {
-            width: 200px;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         /* Metin Bloğu */
         .text-content {
-            max-width: 550px;
+            width: 60%; /* Yazı genişliği */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        /* Bölüm Başlıkları */
         .text-content p:first-child {
             font-weight: 600;
             font-size: 1.2em;
