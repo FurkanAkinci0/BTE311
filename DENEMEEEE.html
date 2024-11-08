@@ -25,41 +25,43 @@
             margin-bottom: 20px;
         }
 
-        #header {
-        background-image: url('Designer.jpeg'); /* Burada resmin ismini ve dosya yolunu belirtiyoruz */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: #333;
-        border-radius: 10px;
-        padding: 20px;
-        max-width: 600px;
-        width: 100%;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
+        /* Header İçerik ve Resim için Flex Düzeni */
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            background-color: #e0f7fa;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            gap: 20px;
         }
 
+        /* Resim Stili */
+        .content-wrapper img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-        #header p:first-child {
+        /* Metin Stili */
+        .text-content {
+            max-width: 550px;
+        }
+
+        /* Bölüm Başlıkları */
+        .text-content p:first-child {
             font-weight: 600;
             font-size: 1.2em;
             margin-bottom: 10px;
         }
 
-        /* Bölüm Başlıkları */
-        #header p:nth-child(2n) {
+        .text-content p:nth-child(2n) {
             font-weight: 600;
             color: #1e88e5;
             margin-top: 20px;
-        }
-
-        /* Metin Stili */
-        #header p {
-            line-height: 1.6;
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px;
-            border-radius: 5px;
         }
 
         /* MP3 Player Stili */
@@ -87,19 +89,25 @@
     </style>
 </head>
 <body>
-    <div id="header">
-        <p>Hikaye:</p>
-        <p>1. Bölüm: Sihirli Fındık Ağacı</p>
-        <p>Küçük bir kasabada yaşayan Ahmet, her gün okuldan eve dönerken ormanın yanındaki dar patikadan geçerdi...</p>
-        
-        <p>2. Bölüm: İlk Dilek</p>
-        <p>Ahmet önce inanmadı, ama merakına yenik düştü ve fındığı yedi...</p>
+    <div class="content-wrapper">
+        <!-- Resim -->
+        <img src="Designer.jpeg" alt="Designer Image">
 
-        <p>3. Bölüm: Dileklerin Gücü</p>
-        <p>Ahmet, sihirli fındığın gücünü fark ettikçe daha büyük dilekler dilemeye başladı...</p>
+        <!-- Metin -->
+        <div class="text-content">
+            <p>Hikaye:</p>
+            <p>1. Bölüm: Sihirli Fındık Ağacı</p>
+            <p>Küçük bir kasabada yaşayan Ahmet, her gün okuldan eve dönerken ormanın yanındaki dar patikadan geçerdi...</p>
 
-        <p>4. Bölüm: Gerçek Mutluluk</p>
-        <p>Ahmet, fındığın sihirli gücünü kullanmanın düşündüğü kadar kolay olmadığını fark etti...</p>
+            <p>2. Bölüm: İlk Dilek</p>
+            <p>Ahmet önce inanmadı, ama merakına yenik düştü ve fındığı yedi...</p>
+
+            <p>3. Bölüm: Dileklerin Gücü</p>
+            <p>Ahmet, sihirli fındığın gücünü fark ettikçe daha büyük dilekler dilemeye başladı...</p>
+
+            <p>4. Bölüm: Gerçek Mutluluk</p>
+            <p>Ahmet, fındığın sihirli gücünü kullanmanın düşündüğü kadar kolay olmadığını fark etti...</p>
+        </div>
     </div>
     
     <div class="audio-container">
