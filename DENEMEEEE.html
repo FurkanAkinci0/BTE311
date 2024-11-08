@@ -25,10 +25,10 @@
             margin-bottom: 20px;
         }
 
-        /* Header İçerik ve Resim için Flex Düzeni */
+        /* İçerik Düzeni */
         .content-wrapper {
             display: flex;
-            align-items: flex-start;
+            flex-direction: row-reverse; /* Resmi sağ tarafa almak için */
             background-color: #e0f7fa;
             border-radius: 10px;
             padding: 20px;
@@ -36,17 +36,22 @@
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             gap: 20px;
+            align-items: flex-start;
         }
 
-        /* Resim Stili */
-        .content-wrapper img {
+        /* Resim Bloğu */
+        .image-block {
+            flex-shrink: 0;
+        }
+
+        .image-block img {
             width: 200px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Metin Stili */
+        /* Metin Bloğu */
         .text-content {
             max-width: 550px;
         }
@@ -90,10 +95,12 @@
 </head>
 <body>
     <div class="content-wrapper">
-        <!-- Resim -->
-        <img src="Designer.jpeg" alt="Designer Image">
+        <!-- Resim Bloğu -->
+        <div class="image-block">
+            <img src="Designer.jpeg" alt="Designer Image">
+        </div>
 
-        <!-- Metin -->
+        <!-- Metin Bloğu -->
         <div class="text-content">
             <p>Hikaye:</p>
             <p>1. Bölüm: Sihirli Fındık Ağacı</p>
