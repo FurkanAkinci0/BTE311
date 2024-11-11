@@ -1,0 +1,52 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Başlık */
+h1 {
+    font-size: 2rem;
+    color: #4a4a8e;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Menü kapsayıcısı */
+nav {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+/* Hafta başlıkları */
+nav p {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Bağlantılar */
+nav a {
+    text-decoration: none;
+    color: #4a4a8e;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f0f0f7;
+}
