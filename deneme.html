@@ -56,24 +56,18 @@
             justify-content: center;
         }
 
-        .text-content p:first-child {
+        /* Tüm bölüm başlıklarını kalın yapma */
+        .text-content p {
             font-weight: 600;
             font-size: 1.2em;
             margin-bottom: 10px;
         }
 
-        /* 1. Bölüm başlığını kalın yapma */
-        .text-content p:nth-child(2) {
+        .text-content p:nth-child(2n) {
             font-weight: 600;
             font-size: 1.2em;
             margin-bottom: 10px;
-        }
-
-        .text-content p:nth-child(2n+3) {
-            font-weight: normal;
-            font-size: 1.1em;
-            color: #000000;
-            margin-top: 20px;
+            color: #000000; /* Yazı rengini siyah yap */
         }
 
         .audio-container {
@@ -141,4 +135,3 @@
     </div>
 </body>
 </html>
-
