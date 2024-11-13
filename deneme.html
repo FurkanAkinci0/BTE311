@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #333333; /* Arka plan rengi */
-            color: #000000; /* Yazı rengi siyah olarak değiştirildi */
+            background-color: #f3f3f3;
+            color: #333;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -19,7 +19,7 @@
 
         h1 {
             font-size: 2em;
-            color: #000000; /* Başlık rengi siyah yapıldı */
+            color: #333;
             margin-bottom: 20px;
         }
 
@@ -56,13 +56,18 @@
             justify-content: center;
         }
 
-        /* Bölüm başlıklarını kalın yapma */
-        .text-content p:first-child,
-        .text-content p:nth-child(2n) {
-            font-weight: 600;  /* Bölüm başlıkları kalın yapıldı */
+        /* Bölüm başlıklarını mavi yapmak */
+        .text-content p:first-child {
+            font-weight: 600;
             font-size: 1.2em;
             margin-bottom: 10px;
-            color: #000000; /* Yazı rengini siyah yap */
+            color: #1e88e5; /* Mavi renk */
+        }
+
+        .text-content p:nth-child(2n) {
+            font-weight: 600;
+            color: #1e88e5; /* Mavi renk */
+            margin-top: 20px;
         }
 
         .audio-container {
@@ -78,7 +83,7 @@
 
         .audio-container h2 {
             font-size: 1.5em;
-            color: #000000; /* Başlık rengi siyah */
+            color: #333;
             margin-bottom: 15px;
         }
 
