@@ -1,7 +1,13 @@
+body {
+    background-color: #363D3C; 
+    color: white; 
+}
+
 table {
     border-collapse: collapse;
-    width: 80%; 
+    width: 60%; 
     margin: 0;
+    background-color: #2F3A3C;
 }
 
 th, td {
