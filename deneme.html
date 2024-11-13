@@ -56,18 +56,18 @@
             justify-content: center;
         }
 
-        /* Bölüm başlıklarını mavi yapmak */
-        .text-content p:first-child {
+        /* Sadece bölüm başlıklarını mavi yapıyoruz */
+        .text-content p:nth-child(2n-1) {
             font-weight: 600;
             font-size: 1.2em;
             margin-bottom: 10px;
             color: #1e88e5; /* Mavi renk */
         }
 
-        .text-content p:nth-child(2n) {
-            font-weight: 600;
-            color: #1e88e5; /* Mavi renk */
+        .text-content p {
+            font-size: 1em;
             margin-top: 20px;
+            color: #333; /* Diğer metinler normal siyah */
         }
 
         .audio-container {
