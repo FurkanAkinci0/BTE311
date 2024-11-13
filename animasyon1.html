@@ -1,88 +1,178 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Animasyon</title>
-	<style>
-		body {
-			background-color: #363D3C; 
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh; 
-			flex-direction: column;
-		}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boosrap Kart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-		@keyframes yukariAsagi {
-			0%, 100% { transform: translateY(0); }
-			50% { transform: translateY(50px); }
-		}
+  <style>
+    body {
+      background-color: #363D3C; /* Arka plan rengi */
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    .container-fluid {
+      margin-top: 30px;
+    }
 
-		@keyframes buyukKuculRenkDegisim {
-			0%, 100% { transform: scale(1); background-color: red; }
-			50% { transform: scale(1.5); background-color: yellow; }
-		}
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      background: #2F3A3C;
+    }
 
-		@keyframes transparanDegisim {
-			0%, 100% { opacity: 1; }
-			50% { opacity: 0.2; }
-		}
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
 
-		@keyframes sagaSola {
-			0%, 100% { transform: translateX(0); }
-			50% { transform: translateX(50px); }
-		}
+    .card-img-top {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+    }
 
-		@keyframes donen {
-			0% { transform: rotate(0deg); }
-			100% { transform: rotate(360deg); }
-		}
+    .card-body {
+      text-align: center;
+    }
 
-		.container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			gap: 20px;
-			text-align: center; 
-		}
+    .card-title a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
 
-		.box {
-			width: 100px;
-			height: 100px;
-			position: relative;
-			margin: 10px;
-			border-radius: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			overflow: hidden; 
-		}
+    .card-title a:hover {
+      color: #00d1b2; /* Renk değişimi */
+    }
 
-		.box img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			border-radius: 50%;
-		}
+    .card-text {
+      font-size: 1rem;
+      margin: 10px 0;
+      color: #bbb;
+    }
 
-		.yukariAsagi { animation: yukariAsagi 2s infinite; }
-		.buyukKuculRenkDegisim { animation: buyukKuculRenkDegisim 2s infinite; }
-		.transparanDegisim { animation: transparanDegisim 2s infinite; }
-		.sagaSola { animation: sagaSola 2s infinite; }
-		.donen { animation: donen 2s infinite linear; }
-	</style>
+    .list-inline-item {
+      margin: 0 10px;
+    }
+
+    .list-inline-item a {
+      color: #fff;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .list-inline-item a:hover {
+      color: #00d1b2; /* Hover efekti */
+    }
+
+    /* Responsive design for small devices */
+    @media (max-width: 768px) {
+      .card {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<div class="box yukariAsagi"><img src="gulensurat.png" alt="Gülen Surat"></div>
-		<div class="box buyukKuculRenkDegisim"><img src="kizginsurat.png" alt="Kızgın Surat"></div>
-		<div class="box transparanDegisim"><img src="uzgunsurat.png" alt="Üzgün Surat"></div>
-		<div class="box sagaSola"><img src="duzsurat.png" alt="Düz Surat"></div>
-		<div class="box donen"><img src="tekgozluk.png" alt="Tek Gözlük"></div>
-	</div>
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    
+    <!-- Kişi 1 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi1.png" alt="kisi1">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Edin</a></h4>
+        <p class="card-text">Her zaman yeni fırsatları değerlendiren ve cesur kararlar alan bir liderdir.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kişi 2 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi2.png" alt="kisi2">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Dusan</a></h4>
+        <p class="card-text">İnsanlarla kolayca iletişim kurar ve onların güvenini kazanır.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kişi 3 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi3.png" alt="kisi3">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Rodrigo</a></h4>
+        <p class="card-text">Yaratıcı düşünme yeteneğiyle karmaşık sorunları çözme konusunda uzmandır.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kişi 4 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi4.png" alt="kisi4">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Oliver</a></h4>
+        <p class="card-text">Doğayla iç içe olmayı seven ve macera dolu bir hayatı tercih eder.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kişi 5 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi5.png" alt="kisi5">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Alex</a></h4>
+        <p class="card-text">Zeki ve analitik bir düşünceye sahip olup, her zaman doğru çözümü bulur.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kişi 6 -->
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <img class="card-img-top" src="kisi6.png" alt="kisi6">
+      <div class="card-body">
+        <h4 class="card-title"><a href="#">Sebastian</a></h4>
+        <p class="card-text">Sanat ve kültürle ilgili derin bir ilgisi vardır ve yeni deneyimler keşfetmekten keyif alır.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+		  <li class="list-inline-item"><a href="mailto:mail@gmail.com" class="envelope"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 </body>
 </html>
