@@ -5,18 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ders Programı</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #363D3C;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         table {
             border-collapse: collapse;
-            width: 80%; /* Tablo genişliği */
-            margin: 20px auto; /* Ortalamak için */
+            width: 80%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+
         th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center; /* Hücre içindeki metni ortala */
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1em;
         }
+
         th {
-            background-color: #f2f2f2; /* Başlık hücrelerinin arka plan rengi */
+            background-color: #009688;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #e7f5f5;
+        }
+
+        td[rowspan] {
+            background-color: #c8e6c9;
+        }
+
+        td:empty {
+            background-color: #f1f1f1;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td[rowspan], td[colspan] {
+            background-color: #b3e0ff;
         }
     </style>
 </head>
@@ -25,11 +74,11 @@
     <table>
         <thead>
             <tr>
-                <th></th>
+                <th>Saat</th>
                 <th>Pazartesi</th>
                 <th>Salı</th>
                 <th>Çarşamba</th>
-                <th>Perşembe</th></th>
+                <th>Perşembe</th>
                 <th>Cuma</th>
             </tr>
         </thead>
@@ -68,8 +117,8 @@
             </tr>
             <tr>
                 <td>13:40 - 14:30</td>
-                <td rowspan="2">BTE307</td>
-                <td rowspan="2">EGT304</td>
+                <td style="background-color: #b3e0ff;" rowspan="2">BTE307</td>
+                <td style="background-color: #b3e0ff;" rowspan="2">EGT304</td>
                 <td> </td>
                 <td> </td>
             </tr>
@@ -99,5 +148,3 @@
     </table>
 </body>
 </html>
-
-
