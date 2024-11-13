@@ -3,31 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4x4 Tablo</title>
+    <title>Tablo 3</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #363D3C;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         table {
             border-collapse: collapse;
-            width: 50%; /* Tablo genişliği */
-            margin: 20px auto; /* Ortalamak için */
+            width: 50%; 
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+
         th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
             padding: 10px;
-            text-align: center; /* Hücre içindeki metni ortala */
+            text-align: center;
+            font-size: 1.1em;
+            background-color: #fff;
         }
+
         th {
-            background-color: #f2f2f2; /* Başlık hücrelerinin arka plan rengi */
+            background-color: #fff; 
+            color: #333; 
+            font-weight: bold;
         }
+
     </style>
 </head>
 <body>
-    <h1>Tablo3</h1>
+    <h1>Tablo 3</h1>
     <table>
         <thead>
             <tr>
-                <th colspan="2">1</th>
-                <th>2</th>
-                <th>3</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
             </tr>
         </thead>
         <tbody>
