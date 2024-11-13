@@ -1,6 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html lang="tr">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animasyon</title>
 	<style>
+		body {
+			background-color: #363D3C; 
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh; 
+			flex-direction: column;
+		}
+
 		@keyframes yukariAsagi {
 			0%, 100% { transform: translateY(0); }
 			50% { transform: translateY(50px); }
@@ -28,9 +43,11 @@
 
 		.container {
 			display: flex;
-			gap: 20px;
 			justify-content: center;
+			align-items: center;
 			flex-wrap: wrap;
+			gap: 20px;
+			text-align: center; 
 		}
 
 		.box {
@@ -42,11 +59,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			overflow: hidden; /* Yüz resimlerinin dışarı taşmasını önlemek için */
+			overflow: hidden; 
 		}
 
 		.box img {
-			width: 100%; /* Yüz img'nin kutuyu tam kaplaması için */
+			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			border-radius: 50%;
