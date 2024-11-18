@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastgele Resim Gösterme</title>
+    <style>
+        /* Sayfa arka planını ve metni düzenle */
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            height: 100vh;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            transition: background 0.5s;
+            flex-direction: column;
+        }
+        
+        /* Resimleri gizlemek için bir sınıf */
+        .hidden {
+            display: none;
+        }
+
+        /* Butonları düzenle */
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        /* Resimler için stil */
+        .image-container img {
+            max-width: 80%;
+            max-height: 300px;
+            margin: 10px;
+        }
+
+        /* Butonların alt kısmı için stil */
+        .button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img id="image1" src="js_a.jpg" class="hidden" />
+        <img id="image2" src="js_b.jpg" class="hidden" />
+        <img id="image3" src="js_c.jpg" class="hidden" />
+        <img id="image4" src="js_d.jpg" class="hidden" />
+        <img id="image5" src="js_e.jpg" class="hidden" />
+        <img id="image6" src="js_f.jpg" class="hidden" />
+        <img id="image7" src="js_g.jpg" class="hidden" />
+        <img id="image8" src="js_h.jpg" class="hidden" />
+        <img id="image9" src="js_i.jpg" class="hidden" />
+        <img id="image10" src="js_j.jpg" class="hidden" />
+    </div>
+
+    <div class="button-container">
+        <button onclick="toggleImages(1)">Rastgele 1 Resim Göster</button>
+        <button onclick="toggleImages(2)">Rastgele 2 Resim Göster</button>
+        <button onclick="toggleImages(3)">Rastgele 3 Resim Göster</button>
+    </div>
+
+    <script>
+        const images = [
+            "image1", "image2", "image3", "image4", "image5", 
+            "image6", "image7", "image8", "image9", "image10"
+        ];
+
+        const backgroundColors = [
+            "#FF6347", "#4682B4", "#32CD32", "#FFD700", "#8A2BE2",
+            "#DC143C", "#00BFFF", "#FF4500", "#2E8B57", "#9932CC"
+        ];
+
+        let previousClicked = null; // Önceki tıklanan buton
+
+        document.body.style.backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
+
+        function toggleImages(numberOfImages) {
+            // Tüm resimleri gizle
+            const allImages = document.querySelectorAll('.image-container img');
+            allImages.forEach(img => img.classList.add('hidden'));
+
+            // Aynı butona iki kez tıklanırsa, resimler gizlenir
+            previousClicked = (previousClicked !== numberOfImages) ? numberOfImages : null;
+
+            // Rastgele gösterilecek resimleri seç
+            if (previousClicked) {
+                const randomImages = [];
+                while (randomImages.length < numberOfImages) {
+                    const randomImageIndex = Math.floor(Math.random() * images.length);
+                    const randomImage = images[randomImageIndex];
+
+                    // Aynı resmin tekrar gösterilmesini engelle
+                    if (!randomImages.includes(randomImage)) {
+                        randomImages.push(randomImage);
+                    }
+                }
+
+                // Seçilen resimleri göster
+                randomImages.forEach(imageId => {
+                    const imgElement = document.getElementById(imageId);
+                    imgElement.classList.remove('hidden');
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
+	
