@@ -1,0 +1,69 @@
+body {
+    background-color: #363D3C;
+    color: white; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%; 
+    overflow: hidden;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #d3d3d3 !important;
+    color: black !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hücre renkleri */
+.mavi {
+    background-color: #5d66ea !important; 
+    color: white !important;
+}
+
+.yesil {
+    background-color: #3bff38 !important; 
+    color: white !important; 
+}
+
+.pembe {
+    background-color: #fd9bfa !important; 
+    color: white !important; 
+}
+
+.turkuaz {
+    background-color: #89fbed !important;
+    color: white !important; 
+}
+
+.kirmizi {
+    background-color: #fb3c4f !important; 
+    color: white !important; 
+}
+
+.turuncu {
+    background-color: #ff8f33 !important; 
+    color: white !important; 
+}
+
+.kyesil {
+    background-color: #00570e !important;
+    color: white !important;
+}
