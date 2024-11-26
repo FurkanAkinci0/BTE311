@@ -1,0 +1,38 @@
+body {
+    background-color: #363D3C; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+    background-color: #2F3A3C;
+    margin: 0; 
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px; 
+}
+
+th {
+    background-color: black; 
+    color: white; 
+}
+
+.blue-header {
+    background-color: blue;
+    color: white; 
+}
+
+.yellow-highlight {
+    background-color: yellow;
+    color: black; 
+}
