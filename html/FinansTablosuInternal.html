@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finans Tablosu Internal</title>
+    <style>
+        body {
+            background-color: #363D3C; 
+            color: white; 
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        th, td {
+            border: 1px solid black; 
+            text-align: center; 
+            vertical-align: middle;
+            padding: 8px;
+        }
+
+        th {
+            background-color: black; 
+            color: white; 
+        }
+
+        .blue-header {
+            background-color: blue; 
+            color: white; 
+        }
+
+        .yellow-highlight {
+            background-color: yellow; 
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+        </tr>
+        <tr>
+            <td class="blue-header">Projected</td>
+            <td>$820,180</td>
+            <td>$841,640</td>
+            <td>$732,270</td>
+        </tr>
+        <tr>
+            <td class="blue-header">Actual</td>
+            <td>$850,730</td>
+            <td>$892,580</td>
+            <td>$801,240</td>
+        </tr>
+        <tr>
+            <td class="blue-header">Utilization</td>
+            <td>83%</td>
+            <td class="yellow-highlight">90%</td>
+            <td>75%</td>
+        </tr>
+    </table>
+</body>
+</html>
