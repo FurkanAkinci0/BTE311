@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.test-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2e2e2e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.question {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.question p {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #0ac2ff;
+}
+
+.question-number {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.correct-answer {
+    background-color: #4CAF50; /* Doğru cevap yeşil */
+}
+
+.incorrect-answer {
+    background-color: #f44336; /* Yanlış cevap kırmızı */
+}
