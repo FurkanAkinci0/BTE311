@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animasyon</title>
+	<style>
+		body {
+			background-color: #363D3C; 
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh; 
+			flex-direction: column;
+		}
+
+		@keyframes yukariAsagi {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(50px); }
+		}
+
+		@keyframes buyukKuculRenkDegisim {
+			0%, 100% { transform: scale(1); background-color: red; }
+			50% { transform: scale(1.5); background-color: yellow; }
+		}
+
+		@keyframes transparanDegisim {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.2; }
+		}
+
+		@keyframes sagaSola {
+			0%, 100% { transform: translateX(0); }
+			50% { transform: translateX(50px); }
+		}
+
+		@keyframes donen {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+			text-align: center; 
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			margin: 10px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden; 
+		}
+
+		.box img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+
+		.yukariAsagi { animation: yukariAsagi 2s infinite; }
+		.buyukKuculRenkDegisim { animation: buyukKuculRenkDegisim 2s infinite; }
+		.transparanDegisim { animation: transparanDegisim 2s infinite; }
+		.sagaSola { animation: sagaSola 2s infinite; }
+		.donen { animation: donen 2s infinite linear; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box yukariAsagi"><img src="../resimler/gulensurat.png" alt="Gülen Surat"></div>
+		<div class="box buyukKuculRenkDegisim"><img src="../resimler/kizginsurat.png" alt="Kızgın Surat"></div>
+		<div class="box transparanDegisim"><img src="../resimler/uzgunsurat.png" alt="Üzgün Surat"></div>
+		<div class="box sagaSola"><img src="../resimler/duzsurat.png" alt="Düz Surat"></div>
+		<div class="box donen"><img src="../resimler/tekgozluk.png" alt="Tek Gözlük"></div>
+	</div>
+</body>
+</html>
