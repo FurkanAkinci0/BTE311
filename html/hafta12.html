@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database</title>
+    <title>Database Form Interaction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,19 +18,54 @@
             margin-left: 40px;
         }
 
-		    h2 {
+        h2 {
             color: #0ac2ff;
-            margin-left: 0px;
         }
-		
+
         form {
             max-width: 400px;
-            margin: 20px 0;
+            margin: 20px auto;
             padding: 20px;
             background: #2e2e2e;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #2e2e2e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0ac2ff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1c1c1c;
+        }
+
+        tr:hover {
+            background-color: #333;
         }
 
         label {
@@ -65,21 +100,13 @@
         button:hover {
             background: #008fbf;
         }
-
-        hr {
-            margin: 40px 20px;
-            width: calc(100% - 40px);
-            border: none;
-            height: 1px;
-            background: #ccc;
-        }
     </style>
 </head>
 <body>
     <h1>Form İşlemleri</h1>
 
     <!-- 1. Form: Veri Girişi -->
-    <form method="POST" action="hafta13.php">
+    <form method="POST" action="hafta12.php">
         <h2>Kişi Bilgilerini Ekle</h2>
         <label for="name">Ad:</label>
         <input type="text" id="name" name="name" required><br>
@@ -93,11 +120,12 @@
     <hr>
 
     <!-- 2. Form: Veri Bulma -->
-    <form method="POST" action="hafta13.php">
-        <h2>Kişi Bul</h2>
-        <label for="search_name">Ad:</label>
-        <input type="text" id="search_name" name="search_name" required>
-        <button type="submit" name="search">Bul</button>
-    </form>
+    <form method="POST" action="hafta12.php">
+    <h2>Kişi Bul</h2>
+    <label for="search_name">Ad:</label>
+    <input type="text" id="search_name" name="search_name">
+    <button type="submit" name="search">Bul</button>
+	</form>
+
 </body>
 </html>
