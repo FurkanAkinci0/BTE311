@@ -1,3 +1,10 @@
+## Projeyi Çalıştırma
+
+1. Bu projeyi indirin.
+2. Proje dizinine gidin 'c:\...\(dosyanın olduğu yer)'
+3. Bağımlılıkları yüklemek için `npm install` komutunu kullanın.
+4. Uygulamayı başlatmak için 'npm start' komutunu kullanın.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
