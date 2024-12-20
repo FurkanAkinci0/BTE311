@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BTE311/static/css/main.d5075961.css",
+    "main.js": "/BTE311/static/js/main.ec016f35.js",
+    "index.html": "/BTE311/index.html",
+    "main.d5075961.css.map": "/BTE311/static/css/main.d5075961.css.map",
+    "main.ec016f35.js.map": "/BTE311/static/js/main.ec016f35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5075961.css",
+    "static/js/main.ec016f35.js"
+  ]
+}
