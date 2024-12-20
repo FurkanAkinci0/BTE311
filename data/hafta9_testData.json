@@ -10,5 +10,21 @@
     { "question": "CSS'de font-boyutunu nasıl değiştirirsiniz?", "options": ["font-size", "font-weight", "text-size", "font-style"], "correctAnswer": "font-size" },
     { "question": "Bir JavaScript fonksiyonu nasıl tanımlanır?", "options": ["function myFunction()", "function = myFunction", "def myFunction()", "func myFunction()"], "correctAnswer": "function myFunction()" },
     { "question": "HTML5'te hangi etiket artık kullanılmaz?", "options": ["font", "div", "span", "header"], "correctAnswer": "font" }
+    {"question": "HTML'de resim eklemek için hangi etiket kullanılır?", "options": ["<img>", "<image>", "<picture>", "<photo>"], "correctAnswer": "<img>"},
+    {"question": "CSS'de arka plan rengini ayarlamak için hangi özellik kullanılır?","options": ["background-color", "color", "background-image", "bg-color"],"correctAnswer": "background-color"},
+    {"question": "JavaScript'te bir koşulu kontrol etmek için hangi yapı kullanılır?", "options": ["if", "for", "while", "switch"],"correctAnswer": "if"},
+    {"question": "HTML'de bağlantı (link) eklemek için hangi etiket kullanılır?","options": ["<a>", "<link>", "<href>", "<url>"],"correctAnswer": "<a>"},
+    {"question": "CSS'de bir elementi gizlemek için hangi özellik kullanılır?", "options": ["display: none", "visibility: hidden", "opacity: 0", "hide: true"],"correctAnswer": "display: none" },
+    {"question": "JavaScript'te bir dizi (array) tanımlamak için hangi semboller kullanılır?", "options": ["[]", "{}", "<>", "()"], "correctAnswer": "[]" },
+    {"question": "HTML'de tablo oluşturmak için hangi etiket kullanılır?", "options": ["<table>", "<tab>", "<grid>", "<chart>"], "correctAnswer": "<table>"},
+    {"question": "CSS'de bir elementin dış boşluğunu ayarlamak için hangi özellik kullanılır?", "options": ["margin", "padding", "border", "spacing"], "correctAnswer": "margin"},
+    {"question": "JavaScript'te bir nesne (object) tanımlamak için hangi semboller kullanılır?", "options": ["{}", "[]", "<>", "##"], "correctAnswer": "{}"},
+    {"question": "HTML'de bir form elemanını tanımlamak için hangi etiket kullanılır?", "options": ["<form>", "<input>", "<label>", "<button>"], "correctAnswer": "<form>"}
+]
+
+
+  ]
+}
+
   ]
 }
