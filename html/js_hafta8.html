@@ -20,10 +20,6 @@
             transition: background 0.5s;
             flex-direction: column;
         }
-        
-        .hidden {
-            display: none;
-        }
 
         button {
             padding: 10px 20px;
@@ -40,10 +36,17 @@
             background-color: #666;
         }
 
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
         .image-container img {
-            max-width: 80%;
+            max-width: 200px;
             max-height: 300px;
-            margin: 10px;
+            display: none;
         }
 
         .button-container {
@@ -57,71 +60,34 @@
     </style>
 </head>
 <body>
-
     <div class="image-container">
-        <img id="image1" src="../resimler/js_a.jpg" class="hidden" />
-        <img id="image2" src="../resimler/js_b.jpg" class="hidden" />
-        <img id="image3" src="../resimler/js_c.jpg" class="hidden" />
-        <img id="image4" src="../resimler/js_d.jpg" class="hidden" />
-        <img id="image5" src="../resimler/js_e.jpg" class="hidden" />
-        <img id="image6" src="../resimler/js_f.jpg" class="hidden" />
-        <img id="image7" src="../resimler/js_g.jpg" class="hidden" />
-        <img id="image8" src="../resimler/js_h.jpg" class="hidden" />
-        <img id="image9" src="../resimler/js_i.jpg" class="hidden" />
-        <img id="image10" src="../resimler/js_j.jpg" class="hidden" />
+        <img id="button1Image" src="" />
+        <img id="button2Image" src="" />
+        <img id="button3Image" src="" />
     </div>
 
     <div class="button-container">
-        <button onclick="toggleImages(1)">Rastgele 1 Resim Göster</button>
-        <button onclick="toggleImages(2)">Rastgele 2 Resim Göster</button>
-        <button onclick="toggleImages(3)">Rastgele 3 Resim Göster</button>
+        <button onclick="toggleImage('button1Image')">Buton 1</button>
+        <button onclick="toggleImage('button2Image')">Buton 2</button>
+        <button onclick="toggleImage('button3Image')">Buton 3</button>
     </div>
 
     <script>
         const images = [
-            "image1", "image2", "image3", "image4", "image5", 
-            "image6", "image7", "image8", "image9", "image10"
+            "../resimler/js_a.jpg", "../resimler/js_b.jpg", "../resimler/js_c.jpg", "../resimler/js_d.jpg", "../resimler/js_e.jpg", 
+            "../resimler/js_f.jpg", "../resimler/js_g.jpg", "../resimler/js_h.jpg", "../resimler/js_i.jpg", "../resimler/js_j.jpg"
         ];
 
-        const backgroundColors = [
-            "#FF6347", "#4682B4", "#32CD32", "#FFD700", "#8A2BE2",
-            "#DC143C", "#00BFFF", "#FF4500", "#2E8B57", "#9932CC"
-        ];
-
-        let previousClicked = null; // Önceki tıklanan buton
-
-        document.body.style.backgroundColor = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
-
-        function toggleImages(numberOfImages) {
-            // Tüm resimleri gizle
-            const allImages = document.querySelectorAll('.image-container img');
-            allImages.forEach(img => img.classList.add('hidden'));
-
-            // Aynı butona iki kez tıklanırsa, resimler gizlenir
-            previousClicked = (previousClicked !== numberOfImages) ? numberOfImages : null;
-
-            // Rastgele gösterilecek resimleri seç
-            if (previousClicked) {
-                const randomImages = [];
-                while (randomImages.length < numberOfImages) {
-                    const randomImageIndex = Math.floor(Math.random() * images.length);
-                    const randomImage = images[randomImageIndex];
-
-                    // Aynı resmin tekrar gösterilmesini engelle
-                    if (!randomImages.includes(randomImage)) {
-                        randomImages.push(randomImage);
-                    }
-                }
-
-                // Seçilen resimleri göster
-                randomImages.forEach(imageId => {
-                    const imgElement = document.getElementById(imageId);
-                    imgElement.classList.remove('hidden');
-                });
+        function toggleImage(imageId) {
+            const imgElement = document.getElementById(imageId);
+            if (imgElement.style.display === 'block') {
+                imgElement.style.display = 'none';
+            } else {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                imgElement.src = images[randomIndex];
+                imgElement.style.display = 'block';
             }
         }
     </script>
-
 </body>
 </html>
-	
