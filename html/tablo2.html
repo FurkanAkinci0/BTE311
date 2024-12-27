@@ -16,6 +16,10 @@
             background-color: #2e2e2e;
             color: #f3f3f3;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         form {
@@ -23,7 +27,7 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 500px;
+            width: 600px;
             margin-left: 0;
         }
 
@@ -74,17 +78,55 @@
         input[type="submit"]:hover {
             background-color: #5E89FF;
         }
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 10px;
+            background-color: #2e2e2e;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+        }
+
+        .home-button img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .home-button:hover {
+            background-color: #444;
+            transform: scale(1.05);
+        }
+
+        .home-button:active {
+            background-color: #1e1e1e;
+        }
     </style>
 </head>
 <body>
-    <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
+    <a href="../index.html" class="home-button">
+        <img src="../resimler/anasayfa.png" alt="Home" />
+    </a>
+
     <form>
+        <h1>Lütfen Formu Eksiksiz Doldurunuz.</h1>
         <h4>Hesap Bilgileriniz</h4>
         <p>Kullanıcı Adı: <input type="text" name="username" placeholder="Kullanıcı adı giriniz" required></p>
         <p>E-posta: <input type="email" name="eposta" placeholder="E-posta giriniz" required></p>
         <p>Parola: <input type="password" name="parola" placeholder="Parola giriniz" required></p>
         
-        <h4>Kişisel Bilgileriniz</h4>
+        <h4>Kışisel Bilgileriniz</h4>
         <p>Ad: <input type="text" name="ad" placeholder="Adınızı giriniz"></p>
         <p>Soyad: <input type="text" name="soyad" placeholder="Soyadınızı giriniz"></p>
         
